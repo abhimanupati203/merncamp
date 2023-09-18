@@ -1,0 +1,23 @@
+img {
+    width:500px;
+}
+body{
+    background: #fff !important;
+}
+
+.bg-default-image {
+    background-image: url("/images/tomacho.jpeg");
+    background-size: 100;
+    background-repeat: no-repeat;
+    background-size: 12%;
+    background-position: right bottom;
+    height: 150px;
+    text-shadow: 2px 2px 8px #000;
+}
+.brand-logo{
+    text-shadow: 2px 2px navy;
+}
+.active{
+    background-color: navy !important;
+
+}
