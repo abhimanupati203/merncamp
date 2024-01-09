@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+  integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<div class="grid-container">
+  <!-- row 1 -->
+  <div class="search">
+    <div class="display-4"><strong>Products</strong></div>
+    <br>
+    <!-- <label for="">Search:</label> &nbsp; &nbsp;  -->
+    <input type="text" placeholder="Search for product name..." size="50" #tabsearch> &nbsp;
+    <button class="btn btn-info" (click)="getSpecificProducts(tabsearch.value)"> Search</button>
+  </div>
+  <p>{{searchmed}}</p>
+
+  <!-- row 2 -->
+  <div class="product">
+    <div class="subgrid">
+               <!-- code here to display the details of all the products as cards--> 
+    </div>
+    <!-- subgrid closed -->
+    <div *ngIf="displaysearch" class="specificsearch">
+      <div class="card ">
+        <!-- code here the card to display the detail of the specific product searched -->
+      </div>
+    </div>
+    <div *ngIf="showError" class="error">
+      <h4><span class="fas fa-cat"></span> {{errorMessage}}</h4>
+    </div>
+  </div>
+</div>
